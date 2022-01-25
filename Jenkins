@@ -49,7 +49,7 @@ pipeline {
             }
         }
 
-        stage('Printing All Global Variables') {
+        stage('Printing 1All Global Variables') {
             steps {
                 sh """
                 env
