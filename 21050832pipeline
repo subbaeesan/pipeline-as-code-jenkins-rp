@@ -1,5 +1,8 @@
 pipeline{
- 
+ agent {
+        node {
+            label 'master'
+        }
          stages {
                 stage('Cleanup Workspace') {
             steps {
