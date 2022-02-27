@@ -1,4 +1,4 @@
-pipeline {
+pipeline{
  
          stages {
                 stage('Cleanup Workspace') {
@@ -12,13 +12,13 @@ pipeline {
 
         stage('Code Checkout') {
             steps {
-                
+                echo "Cleaned Up Workspace for }"
             }
         }
 
         stage('Code Build') {
             steps {
-                
+                echo "Cleaned Up Workspace for }"
             }
         }
 
