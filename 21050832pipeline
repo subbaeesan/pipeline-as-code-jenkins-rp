@@ -6,9 +6,7 @@ pipeline {
         }
     }
 
-    tools { 
-        maven 'maven3' 
-    }
+    
 
     options {
         buildDiscarder logRotator( 
@@ -17,18 +15,13 @@ pipeline {
             )
     }
 
-    environment {
-        APP_NAME = "STUDENT_APP"
-        APP_ENV  = "DEV"
-    }
-
-    stages {
+        stages {
         
         stage('Cleanup Workspace') {
             steps {
                 cleanWs()
                 sh """
-                echo "Cleaned Up Workspace for ${APP_NAME}"
+                echo "Cleaned Up Workspace for }"
                 """
             }
         }
@@ -45,7 +38,7 @@ pipeline {
 
         stage('Code Build') {
             steps {
-                 sh 'mvn install -Dmaven.test.skip=true'
+                
             }
         }
 
